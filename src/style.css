@@ -1,0 +1,121 @@
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    background-color: white;
+    background-image: url("https://www.transparenttextures.com/patterns/concrete-wall.png");
+    color: #111;
+    font-family: "Segoe UI", Arial, sans-serif;
+
+}
+
+main {
+    display: grid;
+    grid-template-columns: minmax(15rem, 20rem) minmax(0, 1fr);
+    align-items: start;
+    gap: clamp(1.5rem, 3vw, 3rem);
+    padding: clamp(2rem, 6vw, 5rem) clamp(1rem, 3vw, 3rem);
+    padding-left: 0;
+}
+
+header{
+    min-width: 0;
+}
+main{
+    position: relative;
+    padding-bottom: 2rem;
+}
+
+
+h1 {
+    position: relative;
+    margin-left: 1rem;
+    padding: 1rem 0;
+    font-size: clamp(1.75rem, 3.5vw, 3rem);
+    font-style: normal;
+    line-height: 1.1;
+    text-align: right;
+    white-space: nowrap;
+}
+
+header a {
+    
+    color: gray;
+    font-size: 1.3rem;
+    text-align: right;
+    text-decoration: none;
+}
+header a:hover{
+    scale: 1.2;
+}
+/*navbar*/
+#nav-bar {
+    margin-top: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    gap: 2rem;
+    padding: 1rem 0;
+}
+
+
+/*gallery*/
+#img-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(min(16rem, 100%), 1fr));
+    gap: clamp(1rem, 2vw, 2rem);
+    width: 100%;
+    min-width: 0;
+    margin-top: 7rem;
+
+}
+
+.img-home {
+    display: block;
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+}
+/*footer*/
+footer{
+    display:flex;
+    flex-direction: row;
+    justify-content: center;
+
+    
+    margin-top: 3rem;;
+    
+}
+
+
+
+/*responsive*/
+@media (max-width: 56rem) {
+    main {
+        grid-template-columns: 1fr;
+        padding-top: 2rem;
+        padding-left: 1.2rem;
+    }
+
+
+    h1 {
+        text-align: left;
+    }
+
+    #nav-bar {
+        align-items: center;
+    }
+
+    a {
+        text-align: left;
+    }
+
+    #img-container {
+        grid-template-columns: 1fr;
+    }
+ 
+}
