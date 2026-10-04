@@ -141,7 +141,30 @@ footer{
 .img-gallery:hover, .img-home:hover{
     scale: 1.05;
     cursor: pointer;
-    transition: 300ms;
+    transition: 400ms;
+}
+/*light-box*/
+.lightbox {
+    border: none;
+    padding: 0;
+
+    background: transparent;
+
+    max-width: none;
+    max-height: none;
+}
+
+.lightbox::backdrop {
+    background: rgba(0, 0, 0, 0.85);
+}
+
+.lightbox-image {
+    display: block;
+
+    max-width: 90vw;
+    max-height: 90vh;
+
+    object-fit: contain;
 }
 
 
@@ -149,9 +172,8 @@ footer{
 
 
 
-
 /*responsive*/
-/*home*/
+
 @media (max-width: 56rem) {
     main {
         grid-template-columns:minmax(0,1fr) ;
@@ -162,6 +184,7 @@ footer{
         padding-top: 2rem;
         padding-left: 1.2rem;
     }
+   
 
     .gallery-page main {
         grid-template-areas:
@@ -181,6 +204,7 @@ footer{
 
 
     #img-container-home {
+        margin-top: 0px;
 
         grid-template-columns: minmax(0,1fr);
        
