@@ -60,6 +60,7 @@ header a {
 header a:hover{
     scale: 1.2;
 }
+
 .site-title{
     color: black;
 }
@@ -93,11 +94,15 @@ header a:hover{
     width: 100%;
     height: auto;
 }
+
 /*footer*/
 footer{
     display:flex;
-    justify-content: center;
-    margin-top: 3rem;
+    justify-content:space-between;
+    margin: 3rem;
+    text-align: center;
+    align-items: center;
+    
     
 }
 
@@ -205,7 +210,27 @@ footer{
 
 }
 
+/*font*/
+@font-face {
+    font-family: "Amatic SC";
+    src: url("../../assets/font/Amatic_SC/AmaticSC-Regular.ttf") format("truetype");
+    font-weight: 400;
+    font-style: normal;
+}
 
+@font-face {
+    font-family: "Amatic SC";
+    src: url("../../assets/font/Amatic_SC/AmaticSC-Bold.ttf") format("truetype");
+    font-weight: 700;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Gruppo";
+    src: url("../../assets/font/Gruppo/Gruppo-Regular.ttf") format("truetype");
+    font-weight: 400;
+    font-style: normal;
+}
 
 /*responsive*/
 
@@ -260,3 +285,4 @@ footer{
     }
  
 }
+
