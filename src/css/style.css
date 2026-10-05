@@ -60,6 +60,9 @@ header a {
 header a:hover{
     scale: 1.2;
 }
+.site-title{
+    color: black;
+}
 /*navbar*/
 .primary-nav {
     margin-top: 1rem;
@@ -102,7 +105,7 @@ footer{
 
 
 
-#gallery-title{
+#page-title{
     text-align: center;
     grid-area: c;
 }
@@ -168,7 +171,39 @@ footer{
 }
 
 
+/*page about me*/
+#about-me-container{
+    grid-area: c;
+    margin-top: 10rem;
+    
+}
+#photo-about-me{
+    
+    float: right;
+    max-width: 40rem;
+    margin: 10px 0 15px 25px;
+    
+}
+#about-me-description{
+    
+    font-family: "Amatic SC", sans-serif;
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: black;
 
+
+}
+
+/*page contact me*/
+#contact-container{
+    
+    font-family: "Amatic SC", sans-serif;
+    margin: 10rem 0 0 10rem;
+    grid-area: c;
+    font-size: 2rem;
+
+
+}
 
 
 
@@ -180,10 +215,11 @@ footer{
          grid-template-areas:
             "b"
             "c";
-
+        
         padding-top: 2rem;
         padding-left: 1.2rem;
     }
+    
    
 
     .gallery-page main {
@@ -191,6 +227,7 @@ footer{
             "b"
             "c";
     }
+   
 
 
     .site-title {
@@ -208,6 +245,18 @@ footer{
 
         grid-template-columns: minmax(0,1fr);
        
+    }
+     #contact-container{
+        margin: 10rem 0 0;
+        text-align: center;
+       
+
+        
+    }
+    #photo-about-me{
+        width: 20rem;
+        float: none;
+        flex-wrap: nowrap;
     }
  
 }
